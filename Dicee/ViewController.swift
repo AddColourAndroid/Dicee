@@ -29,4 +29,8 @@ class ViewController: UIViewController {
         diceImageView1.image = UIImage(named: diceArray[Int(arc4random_uniform(6))])
         diceImageView2.image = UIImage(named: diceArray[Int(arc4random_uniform(6))])
     }
+    
+    override func motionEnded(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {
+        updateDiceImages()
+    }
 }
