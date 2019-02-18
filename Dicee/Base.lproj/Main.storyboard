@@ -38,6 +38,9 @@
                                 <state key="normal" title="ROLL DICE">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="rollDiceButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hUR-Hr-XIr"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="diceeLogo" translatesAutoresizingMaskIntoConstraints="NO" id="Js7-iK-rAR">
                                 <rect key="frame" x="40" y="89" width="295" height="128"/>
