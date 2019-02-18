@@ -17,14 +17,14 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        rollDice()
+        updateDiceImages()
     }
     
     @IBAction func rollDiceButtonPressed(_ sender: UIButton) {
-         rollDice()
+         updateDiceImages()
     }
     
-    func rollDice() {
+    func updateDiceImages() {
         
         diceImageView1.image = UIImage(named: diceArray[Int(arc4random_uniform(6))])
         diceImageView2.image = UIImage(named: diceArray[Int(arc4random_uniform(6))])
